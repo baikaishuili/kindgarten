@@ -343,10 +343,6 @@
         NSLog(@"%@",msg);
  }
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-//    BabySightViewController *babySight =segue.destinationViewController;
-//    babySight.serverInfo = self.serverInfo;
-//}
 /*
 #pragma mark - Navigation
 
