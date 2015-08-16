@@ -228,19 +228,6 @@
     }
 
     return cell;
-    //    UITableViewCell *result = nil;
-//    if( [tableView isEqual:self.menuTableView]) {
-//        static NSString *cellIdentifier = @"Cells";
-//        result = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-//        if( result == nil) {
-//            result = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-//            
-//        }
-//        NSLog(@"setion %ld", (long)indexPath.row);
-//
-//    }
-//    
-//    return result;
     
 }
 
