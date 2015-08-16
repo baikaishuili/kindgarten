@@ -303,7 +303,6 @@
             ClassNoticeViewController *noticeView = [self.storyboard instantiateViewControllerWithIdentifier:@"noticeViewControllerId"];
             noticeView.noticeList = result.data;
             [self.navigationController pushViewController:noticeView animated:YES];
-        
             break;
         }
             //园内新闻
