@@ -284,12 +284,12 @@
             //电话联系
         case 1:
         {
-//            PhoneConnectService *service = [[PhoneConnectService alloc] init];
-//            Baby *baby = [[[UserInstance sharedUserInstance] UserInstance].baby objectAtIndex:0];
-//            ResponseResult *result = [service getTeacherByBaby:baby];
-//            NSArray *userList = [result data];
+            PhoneConnectService *service = [[PhoneConnectService alloc] init];
+            Baby *baby = [[[UserInstance sharedUserInstance] UserInstance].baby objectAtIndex:0];
+            ResponseResult *result = [service getTeacherByBaby:baby];
+            NSArray *userList = [result data];
             PhoneConnectionViewController *connectionView = [self.storyboard instantiateViewControllerWithIdentifier:@"connectionViewControllerId"];
-            //connectionView.userList = userList;
+            connectionView.userList = userList;
             [self.navigationController pushViewController:connectionView animated:YES];
             break;
         }

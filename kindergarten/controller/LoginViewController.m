@@ -71,7 +71,6 @@
                 [self.navigationController popViewControllerAnimated:NO];
                 [self.navigationController pushViewController:menuView animated:YES];
             }
-
             
         }else{
             UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"提示信息" message:result.message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
