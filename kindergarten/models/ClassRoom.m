@@ -12,10 +12,12 @@
 
 +(ClassRoom*) initWithDictionary:(NSDictionary *)dic{
     ClassRoom *room = [[ClassRoom alloc] init];
-    room.rid = [dic valueForKey:@"class_room_id"];
-    room.name = [dic valueForKey:@"room_username"];
-    room.no = [dic valueForKey:@"room_no"];
-    room.password = [dic valueForKey:@"room_password"];
+    room.rid = [dic valueForKey:@"roomId"];
+    room.name = [dic valueForKey:@"roomUsername"];
+    room.no = [dic valueForKey:@"roomNum"];
+    room.password = [dic valueForKey:@"roomPass"];
+    room.roomName = [dic valueForKey:@"roomName"];
+    room.roomRemark = [dic valueForKey:@"roomRemark"];
     return room;
 }
 - (void)dealloc{

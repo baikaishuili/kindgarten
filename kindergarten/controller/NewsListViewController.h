@@ -10,5 +10,5 @@
 
 @interface NewsListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *newsTableView;
-@property (strong,nonatomic) NSArray* noticeList;
+@property (strong,nonatomic) NSArray* newsList;
 @end

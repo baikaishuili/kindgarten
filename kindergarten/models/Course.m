@@ -11,10 +11,10 @@
 @implementation Course
 +(Course*) initWithDictionary:(NSDictionary *)dic{
     Course *course = [[Course alloc] init];
-    course.cid = [dic objectForKey:@"id"];
+    course.cid = [dic objectForKey:@"courseId"];
     course.date = [dic objectForKey:@"courseDate"];
     course.content = [dic objectForKey:@"courseContent"];
-    course.classId = [dic objectForKey:@"claId"];
+    course.classId = [dic objectForKey:@"classId"];
     course.type = [dic objectForKey:@"courseType"];
     course.period = [dic objectForKey:@"coursePeriod"];
     return course;

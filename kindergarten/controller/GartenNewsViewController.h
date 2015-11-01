@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GartenNewsViewController : UITabBarController <UITabBarDelegate,UITabBarControllerDelegate>
-
+@interface GartenNewsViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *channelTableView;
+@property (nonatomic, strong) NSArray* channelList;
 @end

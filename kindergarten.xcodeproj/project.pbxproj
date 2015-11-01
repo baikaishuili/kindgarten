@@ -12,6 +12,7 @@
 		FD434FCE1B0B8896000C381D /* GrowthDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD434FCD1B0B8896000C381D /* GrowthDetailViewController.m */; };
 		FD4459B31AF66373003F5D32 /* ClassNoticeService.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4459B21AF66373003F5D32 /* ClassNoticeService.m */; };
 		FD4459B61AF67459003F5D32 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4459B51AF67459003F5D32 /* MessageViewController.m */; };
+		FD4513B51BD6995E00BF33EF /* ChannelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4513B41BD6995E00BF33EF /* ChannelTableViewCell.xib */; };
 		FD471BA91AF45E960062A611 /* Baby.m in Sources */ = {isa = PBXBuildFile; fileRef = FD471BA81AF45E960062A611 /* Baby.m */; };
 		FD471BAC1AF461C30062A611 /* ClassRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = FD471BAB1AF461C30062A611 /* ClassRoom.m */; };
 		FD471BAF1AF466A90062A611 /* ResponseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = FD471BAE1AF466A90062A611 /* ResponseResult.m */; };
@@ -140,6 +141,13 @@
 		FDAFD7781B51628D00FDC05B /* ynxw.png in Resources */ = {isa = PBXBuildFile; fileRef = FDAFD76F1B51628D00FDC05B /* ynxw.png */; };
 		FDAFD7791B51628D00FDC05B /* zhgl.png in Resources */ = {isa = PBXBuildFile; fileRef = FDAFD7701B51628D00FDC05B /* zhgl.png */; };
 		FDCBF4711AF90CCE003BB936 /* AccountManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCBF4701AF90CCE003BB936 /* AccountManagerViewController.m */; };
+		FDDAD2171BD7CA6000A1AADB /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDAD2161BD7CA6000A1AADB /* Channel.m */; };
+		FDDAD21A1BD7CCC400A1AADB /* NewsChannelService.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDAD2191BD7CCC400A1AADB /* NewsChannelService.m */; };
+		FDDAD21D1BD7D77700A1AADB /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDAD21C1BD7D77700A1AADB /* ChannelTableViewCell.m */; };
+		FDDAD2201BD7DF0B00A1AADB /* ChannelNews.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDAD21F1BD7DF0B00A1AADB /* ChannelNews.m */; };
+		FDEC96D31BDD0CA1009E6092 /* NewsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEC96D11BDD0CA1009E6092 /* NewsListTableViewCell.m */; };
+		FDEC96D41BDD0CA1009E6092 /* NewsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDEC96D21BDD0CA1009E6092 /* NewsListTableViewCell.xib */; };
+		FDEC96D71BDD1FFA009E6092 /* NewsContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEC96D61BDD1FFA009E6092 /* NewsContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +169,7 @@
 		FD4459B21AF66373003F5D32 /* ClassNoticeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassNoticeService.m; sourceTree = "<group>"; };
 		FD4459B41AF67459003F5D32 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		FD4459B51AF67459003F5D32 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		FD4513B41BD6995E00BF33EF /* ChannelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelTableViewCell.xib; sourceTree = "<group>"; };
 		FD471BA71AF45E960062A611 /* Baby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby.h; sourceTree = "<group>"; };
 		FD471BA81AF45E960062A611 /* Baby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby.m; sourceTree = "<group>"; };
 		FD471BAA1AF461C30062A611 /* ClassRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassRoom.h; sourceTree = "<group>"; };
@@ -371,6 +380,19 @@
 		FDAFD7701B51628D00FDC05B /* zhgl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhgl.png; sourceTree = "<group>"; };
 		FDCBF46F1AF90CCE003BB936 /* AccountManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManagerViewController.h; sourceTree = "<group>"; };
 		FDCBF4701AF90CCE003BB936 /* AccountManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManagerViewController.m; sourceTree = "<group>"; };
+		FDDAD2151BD7CA6000A1AADB /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		FDDAD2161BD7CA6000A1AADB /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		FDDAD2181BD7CCC400A1AADB /* NewsChannelService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsChannelService.h; sourceTree = "<group>"; };
+		FDDAD2191BD7CCC400A1AADB /* NewsChannelService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsChannelService.m; sourceTree = "<group>"; };
+		FDDAD21B1BD7D77700A1AADB /* ChannelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewCell.h; sourceTree = "<group>"; };
+		FDDAD21C1BD7D77700A1AADB /* ChannelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewCell.m; sourceTree = "<group>"; };
+		FDDAD21E1BD7DF0B00A1AADB /* ChannelNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelNews.h; sourceTree = "<group>"; };
+		FDDAD21F1BD7DF0B00A1AADB /* ChannelNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelNews.m; sourceTree = "<group>"; };
+		FDEC96D01BDD0CA1009E6092 /* NewsListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListTableViewCell.h; sourceTree = "<group>"; };
+		FDEC96D11BDD0CA1009E6092 /* NewsListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListTableViewCell.m; sourceTree = "<group>"; };
+		FDEC96D21BDD0CA1009E6092 /* NewsListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsListTableViewCell.xib; sourceTree = "<group>"; };
+		FDEC96D51BDD1FFA009E6092 /* NewsContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsContentViewController.h; sourceTree = "<group>"; };
+		FDEC96D61BDD1FFA009E6092 /* NewsContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsContentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -573,7 +595,15 @@
 				FD5CADF81B22C72A00961C1D /* NoticeDetailViewController.m */,
 				FDAFD7611B511FD900FDC05B /* MenuTableViewCell.h */,
 				FDAFD7621B511FD900FDC05B /* MenuTableViewCell.m */,
+				FD4513B41BD6995E00BF33EF /* ChannelTableViewCell.xib */,
 				FDAFD7631B511FD900FDC05B /* MenuTableViewCell.xib */,
+				FDDAD21B1BD7D77700A1AADB /* ChannelTableViewCell.h */,
+				FDDAD21C1BD7D77700A1AADB /* ChannelTableViewCell.m */,
+				FDEC96D01BDD0CA1009E6092 /* NewsListTableViewCell.h */,
+				FDEC96D11BDD0CA1009E6092 /* NewsListTableViewCell.m */,
+				FDEC96D21BDD0CA1009E6092 /* NewsListTableViewCell.xib */,
+				FDEC96D51BDD1FFA009E6092 /* NewsContentViewController.h */,
+				FDEC96D61BDD1FFA009E6092 /* NewsContentViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -657,6 +687,10 @@
 				FD5CADFE1B22E65E00961C1D /* WeekdayDinner.m */,
 				FD5CAE001B23E21300961C1D /* ClassMessage.h */,
 				FD5CAE011B23E21300961C1D /* ClassMessage.m */,
+				FDDAD2151BD7CA6000A1AADB /* Channel.h */,
+				FDDAD2161BD7CA6000A1AADB /* Channel.m */,
+				FDDAD21E1BD7DF0B00A1AADB /* ChannelNews.h */,
+				FDDAD21F1BD7DF0B00A1AADB /* ChannelNews.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -684,6 +718,8 @@
 				FD5CADFB1B22D2C700961C1D /* WeekdayDinnerService.m */,
 				FD5CAE061B23EC3700961C1D /* ClassMessageService.h */,
 				FD5CAE071B23EC3700961C1D /* ClassMessageService.m */,
+				FDDAD2181BD7CCC400A1AADB /* NewsChannelService.h */,
+				FDDAD2191BD7CCC400A1AADB /* NewsChannelService.m */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -879,6 +915,7 @@
 				TargetAttributes = {
 					FD868A0D1AECD4A700B44264 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = MGCVE6WK2Q;
 					};
 					FD868A291AECD4A700B44264 = {
 						CreatedOnToolsVersion = 6.2;
@@ -950,7 +987,9 @@
 				FD868A3E1AECE14900B44264 /* backgroup.png in Resources */,
 				FD51B5811B074343003DA85E /* ResourceTreeViewController.xib in Resources */,
 				FDAB5F051B63830D00F7B35D /* czdajt.png in Resources */,
+				FD4513B51BD6995E00BF33EF /* ChannelTableViewCell.xib in Resources */,
 				FDAFD7771B51628D00FDC05B /* tzgg.png in Resources */,
+				FDEC96D41BDD0CA1009E6092 /* NewsListTableViewCell.xib in Resources */,
 				FDAB5F121B639D0200F7B35D /* jkgcsm.png in Resources */,
 				FDAB5F171B64CFB100F7B35D /* icon_login.png in Resources */,
 				FDAFD7751B51628D00FDC05B /* jzly.png in Resources */,
@@ -999,6 +1038,7 @@
 				FD7E5C1E1B21F8EB0025E7B5 /* TFHpple.m in Sources */,
 				FD4832491B07A891001593CA /* ASIInputStream.m in Sources */,
 				FD4832441B07A891001593CA /* ASIDataCompressor.m in Sources */,
+				FDDAD21D1BD7D77700A1AADB /* ChannelTableViewCell.m in Sources */,
 				FD5315581AEE726C0049657B /* LoginViewController.m in Sources */,
 				FD471BAC1AF461C30062A611 /* ClassRoom.m in Sources */,
 				FD6AECCB1B22823F001F89A5 /* GartenNotice.m in Sources */,
@@ -1006,12 +1046,15 @@
 				FD4B9DA61B1E0481000836FA /* BabyShareService.m in Sources */,
 				FD51B4E91B1364B4001A2A4E /* ClassNotice.m in Sources */,
 				FD51B59E1B077FD0003DA85E /* SystemInfo.m in Sources */,
+				FDDAD2171BD7CA6000A1AADB /* Channel.m in Sources */,
 				FD51B5801B074343003DA85E /* ResourceTreeViewController.m in Sources */,
 				FD4832471B07A891001593CA /* ASIFormDataRequest.m in Sources */,
 				FD5CADFF1B22E65E00961C1D /* WeekdayDinner.m in Sources */,
 				FD4CC05D1B1B077400EDEEE3 /* LeaveMessage.m in Sources */,
 				FD8D02731B102A32003762A9 /* HealthWatchViewController.m in Sources */,
+				FDDAD2201BD7DF0B00A1AADB /* ChannelNews.m in Sources */,
 				FDAFD7641B511FD900FDC05B /* MenuTableViewCell.m in Sources */,
+				FDDAD21A1BD7CCC400A1AADB /* NewsChannelService.m in Sources */,
 				FD4832481B07A891001593CA /* ASIHTTPRequest.m in Sources */,
 				FD6AECC81B228216001F89A5 /* GartenNoticeService.m in Sources */,
 				FD4459B31AF66373003F5D32 /* ClassNoticeService.m in Sources */,
@@ -1033,8 +1076,10 @@
 				FD471BA91AF45E960062A611 /* Baby.m in Sources */,
 				FD471BAF1AF466A90062A611 /* ResponseResult.m in Sources */,
 				FD4832431B07A891001593CA /* ASIAuthenticationDialog.m in Sources */,
+				FDEC96D31BDD0CA1009E6092 /* NewsListTableViewCell.m in Sources */,
 				FD5CAE081B23EC3700961C1D /* ClassMessageService.m in Sources */,
 				FD65F4751B0A38F80099A90F /* PhoneConnectionViewController.m in Sources */,
+				FDEC96D71BDD1FFA009E6092 /* NewsContentViewController.m in Sources */,
 				FD5A230D1B039842005D2785 /* GrowthFileViewController.m in Sources */,
 				FD5315591AEE726C0049657B /* MenuViewController.m in Sources */,
 			);
@@ -1095,6 +1140,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Li Shiwei (634FAMZ8NT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1115,6 +1161,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "0a7defd2-8b14-46aa-a049-6fce86010de7";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1136,6 +1183,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Li Shiwei (634FAMZ8NT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1149,6 +1197,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "0a7defd2-8b14-46aa-a049-6fce86010de7";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1158,9 +1207,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = kindergarten/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1169,9 +1220,11 @@
 					"$(PROJECT_DIR)/kindergarten/external/VMSNetSDK/lib",
 				);
 				New_Setting = "";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1179,9 +1232,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = kindergarten/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1190,9 +1245,11 @@
 					"$(PROJECT_DIR)/kindergarten/external/VMSNetSDK/lib",
 				);
 				New_Setting = "";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};

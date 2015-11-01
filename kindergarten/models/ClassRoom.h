@@ -12,7 +12,9 @@
 @property(nonatomic, copy) NSString* rid;  // 教室Id；
 @property(nonatomic, copy) NSString* no;  // room_no 字段意义不想
 @property(nonatomic, copy) NSString* name;  // 教室名字；
-@property(nonatomic, copy) NSString* password;  // 教师Id；
+@property(nonatomic, copy) NSString* password;
+@property(nonatomic, copy) NSString* roomName;
+@property(nonatomic, copy) NSString* roomRemark;
 
 +(ClassRoom*) initWithDictionary:(NSDictionary *)dic;
 

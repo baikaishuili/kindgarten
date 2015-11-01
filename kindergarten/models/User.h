@@ -15,6 +15,7 @@
 @property(nonatomic,copy) NSString* role;   //用户角色
 @property(nonatomic,copy) NSString* phoneNumber;   //电话号码
 @property(nonatomic,copy) NSString* isable; //
+@property(nonatomic,copy) NSString* userRemark; //
 @property(nonatomic, strong) NSMutableArray* baby;
 
 +(User*) initWithDictionary:(NSDictionary *)dic;

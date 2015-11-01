@@ -12,11 +12,12 @@
 
 +(User*) initWithDictionary:(NSDictionary *)dic{
     User *user = [[User alloc] init];
-    user.uid = [dic valueForKey:@"id"];
+    user.uid = [dic valueForKey:@"userId"];
     user.name = [dic valueForKey:@"username"];
     user.role = [dic valueForKey:@"role"];
-    user.phoneNumber = [dic valueForKey:@"login_phone"];
-    user.isable = [dic valueForKey:@"is_able"];
+    user.phoneNumber = [dic valueForKey:@"loginPhone"];
+    user.isable = [dic valueForKey:@"isAble"];
+    user.userRemark = [dic valueForKey:@"userRemark"];
     return user;
 }
 
@@ -26,7 +27,7 @@
     [dictionary setValue:self.password forKey:@"password"];
     [dictionary setValue:self.phoneNumber forKey:@"login_phone"];
     [dictionary setValue:self.role forKey:@"role"];
-//    [dictionary setValue:self.classId forKey:@"cla_id"];
+    [dictionary setValue:self.userRemark forKey:@"userRemark"];
     return dictionary;
 }
 

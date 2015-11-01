@@ -12,7 +12,7 @@
 
 @implementation HttpWork
 
-static NSString *HOST_NAME = @"http://119.5.155.184:81/gcDemo/";
+static NSString *HOST_NAME = @"http://119.5.155.184:8089/Crown/appServices/";
 - (NSString *)sendRequestSync:(NSString*)requestUrl
 {
     NSString *response;

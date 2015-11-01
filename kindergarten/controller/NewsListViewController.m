@@ -9,8 +9,12 @@
 #import "NewsListViewController.h"
 #import "GartenNoticeService.h"
 #import "ResponseResult.h"
-#import "GartenNotice.h"
+#import "ChannelNews.h"
 #import "NoticeDetailViewController.h"
+#import "NewsListTableViewCell.h"
+#import "NewsChannelService.h"
+#import "NewsContentViewController.h"
+
 @interface NewsListViewController ()
 
 @end
@@ -22,9 +26,6 @@
     // Do any additional setup after loading the view.
     self.newsTableView.delegate = self;
     self.newsTableView.dataSource = self;
-    GartenNoticeService *service = [[GartenNoticeService alloc]init];
-    ResponseResult *result = [service getNoticeList];
-    self.noticeList = result.data;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +35,7 @@
 //返回每个section的行数
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.noticeList.count;
+    return self.newsList.count;
 }
 
 //返回section的数量
@@ -51,32 +52,30 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *result = nil;
-    if( [tableView isEqual:self.newsTableView]) {
-        static NSString *cellIdentifier = @"Cells";
-        result = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-        if( result == nil) {
-            result = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-            
-        }
-        
-        result.textLabel.text = [NSString stringWithFormat:@"%@",[[self.noticeList objectAtIndex:indexPath.row]title]];
+    static NSString *cellIdentifier = @"newsListCell";
+
+    NewsListTableViewCell *cell = (NewsListTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        NSArray *array = [[NSBundle mainBundle] loadNibNamed:@"NewsListTableViewCell" owner:self options:nil];
+        cell = [array objectAtIndex:0];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
     }
     
-    return result;
+    [[cell newsTitleLabelView] setText:[[self.newsList objectAtIndex:indexPath.row] contentTitle]];
+    [[cell newsDateLabelView] setText:[[self.newsList objectAtIndex:indexPath.row] contentDate]];
+    return cell;
     
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    GartenNotice *notice = [self.noticeList objectAtIndex:[indexPath row]];
-    NSLog(@"%@",notice.url);  //这个表示选中的那个cell上的数据
-    GartenNoticeService *service = [[GartenNoticeService alloc]init];
-    ResponseResult *result = [service getNoticeContent:notice.url];
-
-    NoticeDetailViewController *noticeView = [self.storyboard instantiateViewControllerWithIdentifier:@"noticeDetailViewControllerId"];
-    noticeView.image = [UIImage imageWithData:result.data];
-    [self.navigationController pushViewController:noticeView animated:YES];
+    ChannelNews *news = [self.newsList objectAtIndex:[indexPath row]];
+    NewsChannelService *channelservice = [[NewsChannelService alloc] init];
+    ResponseResult *result = [channelservice getContent:news.contentId];
+    
+    NewsContentViewController *contentView = [self.storyboard instantiateViewControllerWithIdentifier:@"newsContentViewControllerId"];
+    contentView.content = result.data;
+    [self.navigationController pushViewController:contentView animated:YES];
     
 }
 /*

@@ -12,7 +12,7 @@
 
 - (NSDictionary*) dictionaryFromObject{
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
-    [dictionary setValue:self.mid forKey:@"id"];
+    [dictionary setValue:self.mid forKey:@"msgId"];
     [dictionary setValue:self.babyId forKey:@"babyId"];
     [dictionary setValue:self.classId forKey:@"claId"];
     [dictionary setValue:self.content forKey:@"leaveMsg"];

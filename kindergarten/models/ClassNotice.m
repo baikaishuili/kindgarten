@@ -12,13 +12,14 @@
 
 +(ClassNotice*) initWithDictionary:(NSDictionary *)dic{
     ClassNotice *notice = [[ClassNotice alloc] init];
-    notice.nid = [dic objectForKey:@"id"];
-    notice.date = [[dic objectForKey:@"pubdate"] substringWithRange:NSMakeRange(0, 10)];
-    notice.content = [dic objectForKey:@"msg"];
-    notice.teacherId = [dic objectForKey:@"teacher_id"];
-    notice.classId = [dic objectForKey:@"cla_id"];
-    notice.checkedId = [dic objectForKey:@"checker_id"];
-    notice.status = [[dic objectForKey:@"status"] intValue];
+    notice.nid = [dic objectForKey:@"noticeId"];
+    notice.date = [[dic objectForKey:@"noticeDate"] substringWithRange:NSMakeRange(0, 10)];
+    notice.content = [dic objectForKey:@"noticeContent"];
+    notice.teacherId = [dic objectForKey:@"teacherId"];
+    notice.classId = [dic objectForKey:@"classId"];
+    notice.checkedId = [dic objectForKey:@"checkerId"];
+    notice.status = [[dic objectForKey:@"noticeStatus"] intValue];
+    notice.checkedId = [dic objectForKey:@"noticeRemark"];
     return notice;
 }
 @end
