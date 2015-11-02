@@ -57,6 +57,7 @@
 - (IBAction)messageBtnClicked:(id)sender {
     LeaveMessage *message = [[LeaveMessage alloc] init];
     message.content = self.MessageTextView.text;
+    NSLog(@"message is %@",self.MessageTextView.text);
     message.phone = self.telTextFeild.text;
     User *user = [[UserInstance sharedUserInstance] UserInstance];
     message.userId = user.uid;

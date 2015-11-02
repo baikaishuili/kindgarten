@@ -50,6 +50,7 @@ static NSString *HOST_NAME = @"http://119.5.155.184:8089/Crown/appServices/";
     NSMutableData *tempJsonData = [NSMutableData dataWithData:jsonData];
     url = [url stringByAppendingString:requestUrl];
     NSLog(@"request url is :%@", url);
+    NSLog(@"request url is :%@", tempJsonData);
     NSURL *nsurl = [NSURL URLWithString:url];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:nsurl];
     [request setDefaultResponseEncoding:NSUTF8StringEncoding];

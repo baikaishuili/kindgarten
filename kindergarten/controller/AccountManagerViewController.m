@@ -68,4 +68,12 @@
         }
     }
 }
+
+//点击屏幕空白处去掉键盘
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.oldPwdTextField resignFirstResponder];
+    [self.changePwdTextFiled resignFirstResponder];
+    [self.confirmPwdTextField resignFirstResponder];
+}
 @end

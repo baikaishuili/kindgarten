@@ -84,6 +84,13 @@
     NSLog(@"num---- pwd %@", result);
 }
 
+//点击屏幕空白处去掉键盘
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.numTextField resignFirstResponder];
+    [self.pwdTextField resignFirstResponder];
+}
+
 - (void)dealloc{
     NSLog(@"LoginViewController is dead");
 }
